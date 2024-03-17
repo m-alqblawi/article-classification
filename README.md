@@ -1,19 +1,46 @@
-# Article Classification
+# Text Classification Project
 
-This project is about classifying articles into different categories. The categories include 'art', 'economy', and 'sport'. The project uses Natural Language Processing (NLP) techniques to preprocess the text data and convert it into numerical features that can be used for machine learning.
+This project involves classifying text documents into different categories. The dataset used in this project contains articles and their corresponding categories.
 
-## Preprocessing
+## Dependencies
 
-The text data is preprocessed by tokenizing the text, converting to lowercase, removing stopwords, and applying stemming.
+- Python 3.7+
+- Scikit-learn
+- Spacy
+- Gensim
+- FastText
+- Pandas
+- Numpy
 
-## Feature Extraction
+## Data Preprocessing
 
-The TF-IDF (Term Frequency-Inverse Document Frequency) vectorizer is used to convert the preprocessed text data into numerical features.
+The text data is preprocessed by removing stop words, punctuation, and performing lemmatization. The preprocessed text is then converted into numerical features using different word embedding techniques.
+
+## Word Embedding Techniques
+
+The following word embedding techniques are used in this project:
+
+- TF-IDF
+- CountVectorizer
+- FastText
+- Spacy
+- Word2Vec
 
 ## Models
 
-Two models are used for the classification task: Naive Bayes and Support Vector Machine (SVM). The performance of the models is evaluated using accuracy, confusion matrix, and classification report.
+The following models are used for classification:
+
+- Multinomial Naive Bayes
+- Support Vector Machine (SVM)
+
+## Evaluation
+
+The models are evaluated using accuracy, confusion matrix, and classification report.
 
 ## Usage
 
-To classify a new article, simply input the text of the article into the `predict` function of the trained model. The function will output the predicted category of the article.
+To run the project, execute the Jupyter notebook. Make sure to install all the dependencies before running the notebook.
+
+## License
+
+This project is licensed under the MIT License.
